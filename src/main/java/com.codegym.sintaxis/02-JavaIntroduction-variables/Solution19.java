@@ -1,8 +1,8 @@
 public class Solution19 {
     public static int min(int a, int b, int c, int d) {
         int min;
-        if a < b && a < c && a < d
-        min = a;
+        if (a < b && a < c && a < d)
+            min = a;
         else if( b < a && b < c && b < d){
             min = b;
         }
@@ -11,16 +11,17 @@ public class Solution19 {
         }
         else
             min = d;
-
         return min;
     }
 
     public static int min(int a, int b) {
         int min;
-        if a < b
-                min = a;
-        else
-        min = b;
+        if (a < b)
+            min = a;
+        else {
+            min = b;
+        }
+        return min;
     }
 
     public static void main(String[] args) throws Exception {

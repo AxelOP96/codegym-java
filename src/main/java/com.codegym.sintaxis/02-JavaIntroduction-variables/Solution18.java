@@ -1,13 +1,15 @@
 public class Solution18 {
     public static int min(int a, int b, int c) {
         int min;
-        if a < b && a < c
+        if (a < b && a < c)
         min = a;
         else if( b < a && b < c){
             min = b;
         }
-        else
+        else{
             min = c;
+        }
+
         return min;
     }
 

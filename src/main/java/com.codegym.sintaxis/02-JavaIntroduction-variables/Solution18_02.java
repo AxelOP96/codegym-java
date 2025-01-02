@@ -1,4 +1,4 @@
-public class Solution18 {
+public class Solution18_02 {
     public static int min(int a, int b, int c) {
         int min;
         if (a < b && a < c)

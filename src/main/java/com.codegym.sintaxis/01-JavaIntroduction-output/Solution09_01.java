@@ -1,4 +1,4 @@
-public class Solution09 {
+public class Solution09_01{
     public static void main(String[] args) {
         int a = 3;
         //int a = 10;

@@ -1,4 +1,4 @@
-public class Solution20 {
+public class Solution20_01 {
     public static void main(String[] args) {
         sumar(2,2);
     }

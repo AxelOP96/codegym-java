@@ -1,4 +1,4 @@
-public class Solution06 {
+public class Solution06_02 {
     public static void main(String[] args) {
         hackSalary(7000);
     }

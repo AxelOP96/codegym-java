@@ -1,3 +1,4 @@
+public class Solution12_05{
 public class Dog {
     String Name;
     int height;
@@ -20,4 +21,4 @@ public class Dog {
 
     }
 }
-
+}

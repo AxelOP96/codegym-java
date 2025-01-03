@@ -1,4 +1,4 @@
-public class Solution04 {
+public class Solution04_05 {
     public static void main(String[] args) {
         Cat one = new Cat("Michel", 31, 40, 20);
         Cat two = new Cat("Axel", 28, 67, 30);

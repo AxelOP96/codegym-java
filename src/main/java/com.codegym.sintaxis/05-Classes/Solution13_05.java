@@ -2,6 +2,9 @@
 * - centerX, centerY, radius
 - centerX, centerY, radius, width
 - centerX, centerY, radius, width, color*/
+public class Solution13_05{
+
+
 public class Circle {
     //write your code here
     private int centerX;
@@ -31,4 +34,5 @@ public class Circle {
     public static void main(String[] args) {
 
     }
+}
 }

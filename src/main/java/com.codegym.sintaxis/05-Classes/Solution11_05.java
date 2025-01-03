@@ -1,3 +1,4 @@
+public class Solution11_05{
 public class Cat {
     String Name;
     int age;
@@ -30,4 +31,5 @@ public class Cat {
     public static void main(String[] args) {
 
     }
+}
 }

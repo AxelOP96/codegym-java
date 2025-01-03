@@ -1,4 +1,6 @@
-public class Solution {
+import java.util.Scanner;
+
+public class Solution07_05 {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
         int num = teclado.nextInt();

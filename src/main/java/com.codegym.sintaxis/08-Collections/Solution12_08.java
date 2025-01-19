@@ -16,7 +16,7 @@ public class Solution12_08 {
     }
 
     public static List getListForAddOrInsert() {
-        List<Object> lista = new ArrayList<>();
+        List<Object> lista = new LinkedList<>();
         return lista;
 
     }

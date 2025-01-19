@@ -3,6 +3,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class Solution20_08 {
+    //Set of cats X
     public static void main(String[] args) {
         Set<Cat> cats = createCats();
 

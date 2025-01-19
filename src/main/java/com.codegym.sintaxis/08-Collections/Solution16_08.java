@@ -5,6 +5,17 @@ import java.util.Map;
 public class Solution16_08 {
     public static HashMap<String, String> createMap() {
         HashMap<String, String> lista = new HashMap<>();
+        lista.put("Tennyson", "Ben");
+        lista.put("Tenny", "Gwen");
+        lista.put("Fuego", "Charmander");
+        lista.put("Agua", "Squirtle");
+        lista.put("Planta", "Bulbasaur");
+        lista.put("Electrico", "Pikachu");
+        lista.put("Hielo", "Lapras");
+        lista.put("Fantasma", "Gengar");
+        lista.put("Volador", "Dodrio");
+        lista.put("Veneno", "Ben");
+
         return lista;
 
     }

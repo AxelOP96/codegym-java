@@ -12,17 +12,15 @@ public class Solution22_07 {
         for(int i=0; i<N; i++){
             lista.add(reader.readLine());
         }
-        //Reel de face https://www.facebook.com/reel/632577759430214
+
         int count =0;
         for(int i=0; i<M;i++){
             if(count == M){
                 break;
             }
             else{
-                String word = lista.remove(lista.size()-1);
-                lista.add(0, word);
-                count++;
-                i--;
+                String word = lista.remove(0); // Extrae el primer elemento
+                lista.add(word);
             }
         }
         for(String show : lista){

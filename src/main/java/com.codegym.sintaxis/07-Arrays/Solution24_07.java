@@ -9,11 +9,18 @@ public class Solution24_07 {
 
         ArrayList<String> list = new ArrayList<>();
         String word = reader.readLine();
-        while(!word.equals("end")){
-            list.add(word);
+        for(;;){
+        //while(!word.equals("end")){
+            if(word.equals("end")){
+                break;
+            }
+            else{
+                list.add(word);
 
-            System.out.println(word);
-            word = reader.readLine();
+                System.out.println(word);
+                word = reader.readLine();
+            }
+
         }
     }
 }

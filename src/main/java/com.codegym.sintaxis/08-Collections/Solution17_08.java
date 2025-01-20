@@ -26,12 +26,13 @@ public class Solution17_08 {
         Iterator<Map.Entry<String, Date>> iterator = map.entrySet().iterator();
         while(iterator.hasNext()){
             Map.Entry<String, Date> pair = iterator.next();
-            Date inicioRango = new Date("JUNE 1"); // fecha de inicio del rango
-            Date finRango = new Date("AUGUST 31"); // fecha de fin del rango
             String key = pair.getKey();
             Date fecha = pair.getValue();
-            if (fecha.after(inicioRango) && fecha.before(finRango)){
-                map.remove(key, fecha);
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(fecha);
+            int month = cal.get(Calendar.MONTH);
+            if (month >= Calendar.JUNE && month <= Calendar.SEPTEMBER){
+                iterator.remove();
             }
         }
 
@@ -39,12 +40,14 @@ public class Solution17_08 {
 
     public static void main(String[] args) throws ParseException {
         HashMap<String, Date> lista = createMap();
+
+        removeAllSummerPeople(lista);
         Iterator<Map.Entry<String, Date>> iterator = lista.entrySet().iterator();
         while(iterator.hasNext()){
             Map.Entry<String, Date> pair = iterator.next();
             String key = pair.getKey();
             Date value = pair.getValue();
             System.out.println("Persona: " + key + ", Cumpleaños: " + value);
+        }
     }
-}
 }

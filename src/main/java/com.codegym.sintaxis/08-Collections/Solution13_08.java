@@ -7,8 +7,8 @@ import java.util.Iterator;
 public class Solution13_08 {
     public static void main(String[] args) throws IOException {
         //write your code here
-        int streak=0;
-        int saved = 0;
+        int streak = 1;
+        int saved = 1;
         ArrayList<Integer> lista = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for(int i=0;i<10;i++){
@@ -16,19 +16,23 @@ public class Solution13_08 {
 
         }
         Iterator<Integer> listaIterada = lista.iterator();
+        int prev = listaIterada.next();
         while(listaIterada.hasNext()){
-            if(listaIterada.next() == listaIterada.next()){
+            int current = listaIterada.next();
+            if (current == prev) {
                 streak++;
             }
             else{
                 if(streak > saved){
                     saved = streak;
-                    streak = 0;
-                }else{
-                    streak =0;
-                }
 
-            }
+                }
+                streak = 1;
+
+            }prev = current;
+        }
+        if (streak > saved) {
+            saved = streak;
         }
         System.out.println(saved);
     }

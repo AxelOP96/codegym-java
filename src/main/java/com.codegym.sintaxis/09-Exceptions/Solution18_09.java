@@ -1,4 +1,5 @@
 public class Solution18_09 {
+    //We're all friends here, even the exceptions
     public static void main(String[] args) {
         handleExceptions(new Solution18_09());
     }
